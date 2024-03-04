@@ -1,0 +1,71 @@
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\bin\Debug\net8.0-windows\CC31B-PowerpuffBoys.exe
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\bin\Debug\net8.0-windows\CC31B-PowerpuffBoys.deps.json
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\bin\Debug\net8.0-windows\CC31B-PowerpuffBoys.runtimeconfig.json
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\bin\Debug\net8.0-windows\CC31B-PowerpuffBoys.dll
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\bin\Debug\net8.0-windows\CC31B-PowerpuffBoys.pdb
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys_MarkupCompile.cache
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys_MarkupCompile.lref
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.g.resources
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.AssemblyInfoInputs.cache
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.AssemblyInfo.cs
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.csproj.CoreCompileInputs.cache
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.sourcelink.json
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.dll
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\obj\Debug\net8.0-windows\refint\CC31B-PowerpuffBoys.dll
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.pdb
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.genruntimeconfig.cache
+C:\Users\tomij\source\repos\tpclumibao\CC31B-PowerpuffBoys\obj\Debug\net8.0-windows\ref\CC31B-PowerpuffBoys.dll
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\bin\Debug\net8.0-windows\CC31B-PowerpuffBoys.exe
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\bin\Debug\net8.0-windows\CC31B-PowerpuffBoys.deps.json
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\bin\Debug\net8.0-windows\CC31B-PowerpuffBoys.runtimeconfig.json
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\bin\Debug\net8.0-windows\CC31B-PowerpuffBoys.dll
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\bin\Debug\net8.0-windows\CC31B-PowerpuffBoys.pdb
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\bin\Debug\net8.0-windows\Engine.dll
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\bin\Debug\net8.0-windows\Engine.pdb
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.csproj.AssemblyReference.cache
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys_MarkupCompile.cache
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys_MarkupCompile.lref
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.g.resources
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.AssemblyInfoInputs.cache
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.AssemblyInfo.cs
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.csproj.CoreCompileInputs.cache
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.sourcelink.json
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.csproj.CopyComplete
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.dll
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\refint\CC31B-PowerpuffBoys.dll
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.pdb
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.genruntimeconfig.cache
+C:\Users\tomij\Documents\cc3-wpf\CC31B-PowerpuffBoyss\Dark myth\obj\Debug\net8.0-windows\ref\CC31B-PowerpuffBoys.dll
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\bin\Debug\net8.0-windows\CC31B-PowerpuffBoys.exe
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\bin\Debug\net8.0-windows\CC31B-PowerpuffBoys.deps.json
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\bin\Debug\net8.0-windows\CC31B-PowerpuffBoys.runtimeconfig.json
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\bin\Debug\net8.0-windows\CC31B-PowerpuffBoys.dll
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\bin\Debug\net8.0-windows\CC31B-PowerpuffBoys.pdb
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\bin\Debug\net8.0-windows\Engine.dll
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\bin\Debug\net8.0-windows\Engine.pdb
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.csproj.AssemblyReference.cache
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys_MarkupCompile.cache
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys_MarkupCompile.lref
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.g.resources
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.AssemblyInfoInputs.cache
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.AssemblyInfo.cs
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.csproj.CoreCompileInputs.cache
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.sourcelink.json
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.csproj.CopyComplete
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.dll
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\refint\CC31B-PowerpuffBoys.dll
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.pdb
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\CC31B-PowerpuffBoys.genruntimeconfig.cache
+C:\Users\tomij\Documents\cc3-Powerpuff\CC31B-PowerpuffBoyss\Darkmyth\obj\Debug\net8.0-windows\ref\CC31B-PowerpuffBoys.dll

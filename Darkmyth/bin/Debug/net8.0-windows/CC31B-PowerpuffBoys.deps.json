@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CC31B-PowerpuffBoys/1.0.0": {
+        "dependencies": {
+          "Engine": "1.0.0"
+        },
+        "runtime": {
+          "CC31B-PowerpuffBoys.dll": {}
+        }
+      },
+      "Engine/1.0.0": {
+        "runtime": {
+          "Engine.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CC31B-PowerpuffBoys/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Engine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
