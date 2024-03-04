@@ -75,14 +75,36 @@
             <Label Grid.Row="0" Grid.Column="1" Content="Item Bottons" Background="Beige"/>
         </Grid>
 
-        <!-- Player Info-->
+        <!-- Lication info/Enemy Info-->
         <Grid Grid.Row="1" Grid.Column="3">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Label Grid.Row="0" Grid.Column="0" Content="Location Information" Background="Bisque"/>
-            <Label Grid.Row="1" Grid.Column="0" Content="Enemy Location" Background="Bisque"/>
+
+            <Grid Grid.Row="0" Grid.Column="0" Background="Azure">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0"
+                           HorizontalAlignment="Center"
+                           Text="{Binding CurrentLocation.Name}"/>
+
+                <Image Grid.Row="1"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Height="125"
+                       Width="125"
+                       Source="{Binding CurrentLoction.ImageName}"/>
+
+                <TextBlock Grid.Row="2"
+                           HorizontalAlignment="Center"
+                           Text="{Binding CurrentLocation.Description}"/>
+            </Grid>
+            <Label Grid.Row="1" Grid.Column="0" Content="Enemy Information" Background="Bisque"/>
         </Grid>
         <Label Grid.Row="2" Grid.Column="2" Content="Navigation Bottons" Background="BurlyWood"/>
     </Grid>
