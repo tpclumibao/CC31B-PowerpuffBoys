@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tomij\\Documents\\cc3-Powerpuff\\CC31B-PowerpuffBoyss\\Engine\\Engine.csproj",
+      "projectUniqueName": "C:\\Users\\tomij\\source\\repos\\tpclumibao\\CC31B-PowerpuffBoyss\\Engine\\Engine.csproj",
       "projectName": "Engine",
-      "projectPath": "C:\\Users\\tomij\\Documents\\cc3-Powerpuff\\CC31B-PowerpuffBoyss\\Engine\\Engine.csproj",
+      "projectPath": "C:\\Users\\tomij\\source\\repos\\tpclumibao\\CC31B-PowerpuffBoyss\\Engine\\Engine.csproj",
       "packagesPath": "C:\\Users\\tomij\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tomij\\Documents\\cc3-Powerpuff\\CC31B-PowerpuffBoyss\\Engine\\obj\\",
+      "outputPath": "C:\\Users\\tomij\\source\\repos\\tpclumibao\\CC31B-PowerpuffBoyss\\Engine\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tomij\\AppData\\Roaming\\NuGet\\NuGet.Config",
