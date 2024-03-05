@@ -8,10 +8,14 @@
 
   <ItemGroup>
     <None Remove="Images\Locations\GatesOfAsea.jpg" />
+    <None Remove="Images\Locations\HellionPlaza.png" />
+    <None Remove="Images\Locations\TearfullTavern.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Images\Locations\GatesOfAsea.jpg" />
+    <Resource Include="Images\Locations\HellionPlaza.png" />
+    <Resource Include="Images\Locations\TearfullTavern.png" />
   </ItemGroup>
 
 </Project>
