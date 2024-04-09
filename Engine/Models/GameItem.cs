@@ -9,27 +9,23 @@ namespace Engine.Models
 {
     public class GameItem
     {
-        public int ItemTypeID;
-        public string Name;
-        public int Price;
-        public string ImageName;
-        public int MinimumDamage;
-        public int MaximumDamage;
+        public int ItemTypeID { get; set; }
+        public string Name { get; set; }
+        public int Price { get; set; }
+        public string ImageName { get; set; }
 
 
-        public GameItem(int ItemTypeID, string Name, int Price, string ImageName, int MinimumDamage, int MaximumDamage)
+        public GameItem(int itemTypeID, string name, int price, string imageName)
         {
-            this.ItemTypeID = ItemTypeID;
-            this.Name = Name;
-            this.Price = Price;
-            this.ImageName = ImageName;
-            this.MinimumDamage = MinimumDamage;
-            this.MaximumDamage = MaximumDamage;
+            ItemTypeID = itemTypeID;
+            Name = name;
+            Price = price;
+            ImageName = imageName;
         }
 
         public GameItem Clone()
         {
-            return new GameItem(this.ItemTypeID, this.Name, this.Price, this.ImageName, this.MinimumDamage, this.MaximumDamage);
+            return new GameItem(ItemTypeID, Name, Price, ImageName);
         }
 
 
@@ -37,17 +33,19 @@ namespace Engine.Models
 
     public class Weapon : GameItem
     {
+        public int MinimumDamage {  get; set; }
+        public int MaximumDamage { get; set; }
 
-        public Weapon(int ItemTypeID, string Name, int Price, string ImageName, int MinimumDamage, int MaximumDamage) 
-            : base(ItemTypeID, Name, Price, ImageName, MinimumDamage, MaximumDamage)
+        public Weapon(int itemTypeID, string name, int price, string imageName, int minDamage, int maxDamage) 
+            : base(itemTypeID, name, price, imageName)
         {
-            
+            MinimumDamage = minDamage;
+            MaximumDamage = maxDamage;
         }
 
         public new Weapon Clone()
-        { 
-            GameItem clonedItem = (GameItem)base.Clone();
-            return (Weapon)clonedItem;
+        {
+            return new Weapon(ItemTypeID, Name, Price, ImageName, MinimumDamage, MaximumDamage);
         }
     }
  

@@ -6,12 +6,24 @@ using System.Threading.Tasks;
 
 namespace Engine.Models
 {
-    internal class Quest
+    public class Quest
     {
         public int ID { get; set; }
-        public Quest(int ID, string Name, string Description, List<ItemQuantity> ItemsToComplete, int RewardExpPoints, int RewardGold, List<ItemQuantity> RewardItems) 
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public List<ItemQuantity> ItemsToComplete { get; set; }
+        public  int RewardExperiencePoints { get; set; }
+        public int RewardGold {  get; set; }
+        public List<ItemQuantity> RewardItems { get; set; }
+        public Quest(int id, string name, string description, List<ItemQuantity> itemsToComplete, int rewardExpPoints, int rewardGold, List<ItemQuantity> rewardItems) 
         {
-            this.ID = ID;
+            ID = id;
+            Name = name;
+            Description = description;
+            ItemsToComplete = itemsToComplete;
+            RewardExperiencePoints = rewardExpPoints;
+            RewardGold = rewardGold;
+            RewardItems = rewardItems;
         }  
     }
 }
