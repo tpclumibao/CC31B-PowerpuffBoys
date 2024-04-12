@@ -7,15 +7,38 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\Locations\GatesOfAsea.jpg" />
-    <None Remove="Images\Locations\HellionPlaza.png" />
-    <None Remove="Images\Locations\TearfullTavern.png" />
+    <None Remove="Images\Locations\Castle.png" />
+    <None Remove="Images\Locations\Church.png" />
+    <None Remove="Images\Locations\Cliff.png" />
+    <None Remove="Images\Locations\Garden.png" />
+    <None Remove="Images\Locations\Gate.png" />
+    <None Remove="Images\Locations\Inn.png" />
+    <None Remove="Images\Locations\Lower.png" />
+    <None Remove="Images\Locations\Sewer.png" />
+    <None Remove="Images\Locations\Tavern.png" />
+    <None Remove="Images\Locations\Upper.png" />
+    <None Remove="Images\Monsters\Flower.png" />
+    <None Remove="Images\Monsters\Priest.png" />
+    <None Remove="Images\Monsters\Rat.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\Locations\GatesOfAsea.jpg" />
-    <Resource Include="Images\Locations\HellionPlaza.png" />
-    <Resource Include="Images\Locations\TearfullTavern.png" />
+    <Resource Include="Images\Locations\Upper.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Locations\Castle.png" />
+    <Resource Include="Images\Locations\Church.png" />
+    <Resource Include="Images\Locations\Cliff.png" />
+    <Resource Include="Images\Locations\Garden.png" />
+    <Resource Include="Images\Locations\Gate.png" />
+    <Resource Include="Images\Locations\Inn.png" />
+    <Resource Include="Images\Locations\Lower.png" />
+    <Resource Include="Images\Locations\Sewer.png" />
+    <Resource Include="Images\Locations\Tavern.png" />
+    <Resource Include="Images\Monsters\Flower.png" />
+    <Resource Include="Images\Monsters\Priest.png" />
+    <Resource Include="Images\Monsters\Rat.png" />
   </ItemGroup>
 
 </Project>
