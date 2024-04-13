@@ -16,64 +16,64 @@ namespace Engine.Factories
             newWorld.AddLocation(0, 0, 
                 "Entrance to Asea", 
                 "You arive at your destination it seems. As you look in fron of you, the once magestic gates of asea stand before you, crumbling and painted in red", 
-                "pack://application:,,,/Engine;component/Images/Locations/Gate.png");
+                "Gate.png");
 
             newWorld.LocationAt(0,0).QuestAvailableHere.Add(QuestFactory.GetQuestByID(1));
 
             newWorld.AddLocation(1, 0,
                 "LowerHellion Plaza",
                 "The once bustling plaza of Asea, now littered with corpses of both the young and old",
-                "pack://application:,,,/Engine;component/Images/Locations/Lower.png");
+                "Lower.png");
 
             newWorld.AddLocation(1, 1,
                 "Tearfull Tavern",
                 "As you Enter the rundown taver, you notice that its still being kept relatively clean. a stark contrast to whats outside",
-                "pack://application:,,,/Engine;component/Images/Locations/Tavern.png");
+                "Tavern.png");
 
             
 
             newWorld.AddLocation(1, -1,
                 "SpillWay Inn",
                 "You arive at your destination it seems. As you look in fron of you, the once magestic gates of asea stand before you, crumbling and painted in red",
-                "pack://application:,,,/Engine;component/Images/Locations/Inn.png");
+                "Inn.png");
 
             newWorld.AddLocation(2, 0,
                "Upper HellionPlaza",
                "As you Enter the rundown taver, you notice that its still being kept relatively clean. a stark contrast to whats outside",
-               "pack://application:,,,/Engine;component/Images/Locations/Upper.png");
+               "Upper.png");
 
             newWorld.AddLocation(2, 1,
                 "Church of Erebus",
                 "The once bustling plaza of Asea, now littered with corpses of both the young and old",
-                "pack://application:,,,/Engine;component/Images/Locations/Church.png");
+                "Church.png");
 
             newWorld.LocationAt(2, 1).AddMonster(2, 100);
 
             newWorld.AddLocation(2, -1,
                 "Withering Garden",
                 "As you Enter the rundown taver, you notice that its still being kept relatively clean. a stark contrast to whats outside",
-                "pack://application:,,,/Engine;component/Images/Locations/Garden.png");
+                "Garden.png");
 
             newWorld.LocationAt(2, -1).AddMonster(3, 100);
 
             newWorld.AddLocation(3, 0,
                 "Castle of Blight",
                 "You arive at your destination it seems. As you look in fron of you, the once magestic gates of asea stand before you, crumbling and painted in red",
-                "pack://application:,,,/Engine;component/Images/Locations/Castle.png");
+                "Castle.png");
 
             newWorld.LocationAt(3, 0).AddMonster(4, 100);
 
             newWorld.AddLocation(1, 2,
                 "Sewers",
                 "The once bustling plaza of Asea, now littered with corpses of both the young and old",
-                "pack://application:,,,/Engine;component/Images/Locations/Sewer.png");
+                "Sewer.png");
 
             newWorld.LocationAt(1, 2).AddMonster(1, 100);
 
             newWorld.AddLocation(4, 0,
                 "Cliff View",
                 "As you Enter the rundown taver, you notice that its still being kept relatively clean. a stark contrast to whats outside",
-                "pack://application:,,,/Engine;component/Images/Locations/Cliff.png");
+                "pCliff.png");
 
             newWorld.LocationAt(4, 0).AddMonster(5, 100);
 
