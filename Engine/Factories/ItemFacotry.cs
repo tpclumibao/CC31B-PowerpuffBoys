@@ -25,6 +25,7 @@ namespace Engine.Factories
             _standardGameItems.Add(new GameItem(505, "Torn Lower Body", 0, ""));
             _standardGameItems.Add(new GameItem(506, "Rat Dung", 0, ""));
             _standardGameItems.Add(new GameItem(507, "Rotting Root", 0, ""));
+            _standardGameItems.Add(new GameItem(508, "Dust", 0, ""));
 
         }
 

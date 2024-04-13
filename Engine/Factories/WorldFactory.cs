@@ -61,6 +61,8 @@ namespace Engine.Factories
                 "You arive at your destination it seems. As you look in fron of you, the once magestic gates of asea stand before you, crumbling and painted in red",
                 "pack://application:,,,/Engine;component/Images/Locations/Castle.png");
 
+            newWorld.LocationAt(3, 0).AddMonster(4, 100);
+
             newWorld.AddLocation(1, 2,
                 "Sewers",
                 "The once bustling plaza of Asea, now littered with corpses of both the young and old",
@@ -72,6 +74,8 @@ namespace Engine.Factories
                 "Cliff View",
                 "As you Enter the rundown taver, you notice that its still being kept relatively clean. a stark contrast to whats outside",
                 "pack://application:,,,/Engine;component/Images/Locations/Cliff.png");
+
+            newWorld.LocationAt(4, 0).AddMonster(5, 100);
 
 
 

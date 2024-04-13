@@ -86,8 +86,36 @@
                 </TabItem>
             </TabControl>
         </Grid>
-        <!-- Game message-->
-            <Label Grid.Row="1" Grid.Column="1" Content="Game Messages" Background="Azure"/>
+        <!-- Gameplay -->
+        <Grid Grid.Row="1" Grid.Column="1"
+              Background="Beige">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Game Messages -->
+            <Border Grid.Row="0" Grid.Column="0"
+                    Grid.RowSpan="2"
+                    BorderBrush="Gainsboro"
+                    BorderThickness="1">
+                <RichTextBox x:Name="GameMessages"
+                             Background="Beige"
+                             VerticalScrollBarVisibility="Auto">
+                    <RichTextBox.Resources>
+                        <Style TargetType="{x:Type Paragraph}">
+                            <Setter Property="Margin" Value="0"/>
+                        </Style>
+                    </RichTextBox.Resources>
+                </RichTextBox>
+
+            </Border>
+        </Grid>
         <!-- Item/ Item Action Bottons-->
         <Grid Grid.Row="2" Grid.Column="1">
             <Grid.ColumnDefinitions>

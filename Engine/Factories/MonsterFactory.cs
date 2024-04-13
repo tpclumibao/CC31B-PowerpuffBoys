@@ -31,6 +31,16 @@ namespace Engine.Factories
                     AddLootItem(flower, 503, 25);
                     AddLootItem(flower, 507, 75);
                     return flower;
+                case 4:
+                    Monster Corps =
+                        new Monster("BlightedKnights", "Knights.png", 10, 10, 10, 3);
+                    AddLootItem(Corps, 508, 100);
+                    return Corps;
+                case 5:
+                    Monster Erebus =
+                        new Monster("Primordial God Erebus", "Erebus.png", 10, 10, 10, 3);
+                    AddLootItem(Erebus, 500, 100);
+                    return Erebus;
                 default:
                     throw new ArgumentException(string.Format("MonsterType '{0}' does not exist", monsterID));
             }
