@@ -15,30 +15,30 @@ namespace Engine.Factories
             {
                 case 1:
                     Monster rat =
-                        new Monster("PlagueRat", "Rat.png", 4, 4, 5, 1);
+                        new Monster("PlagueRat", "Rat.png", 4, 4,5,5, 5, 1);
                     AddLootItem(rat, 502, 25);
                     AddLootItem(rat, 506, 75);
                     return rat;
                 case 2:
                     Monster priest =
-                        new Monster("PriestOfErebus", "Priest.png", 5, 5, 5, 1);
+                        new Monster("PriestOfErebus", "Priest.png", 5, 5,5,5, 5, 1);
                     AddLootItem(priest, 501, 25);
                     AddLootItem(priest, 505, 75);
                     return priest;
                 case 3:
                     Monster flower =
-                        new Monster("DeathBloom", "Flower.png", 10, 10, 10, 3);
+                        new Monster("DeathBloom", "Flower.png", 10, 10, 5, 5, 10, 3);
                     AddLootItem(flower, 503, 25);
                     AddLootItem(flower, 507, 75);
                     return flower;
                 case 4:
                     Monster Corps =
-                        new Monster("BlightedKnights", "Knights.png", 10, 10, 10, 3);
+                        new Monster("BlightedKnights", "Knights.png", 10, 10, 5, 5, 10, 3);
                     AddLootItem(Corps, 508, 100);
                     return Corps;
                 case 5:
                     Monster Erebus =
-                        new Monster("Primordial God Erebus", "Erebus.png", 10, 10, 10, 3);
+                        new Monster("Primordial God Erebus", "Erebus.png", 10, 10, 5, 5, 10, 3);
                     AddLootItem(Erebus, 500, 100);
                     return Erebus;
                 default:

@@ -8,10 +8,10 @@ using Engine.Models;
 
 namespace Engine.Factories
 {
-    public static class ItemFacotry
+    public static class ItemFactory
     {
         private static List<GameItem> _standardGameItems;
-        static ItemFacotry()
+        static ItemFactory()
         {
             _standardGameItems = new List<GameItem>();
             _standardGameItems.Add(new Weapon(101, "Inquisitor Blade", 5, "", 0, 10));
@@ -32,9 +32,12 @@ namespace Engine.Factories
         public static GameItem CreateGameItem(int itemTypeID)
         {
             GameItem standardItem = _standardGameItems.FirstOrDefault(item => item.ItemTypeID == itemTypeID);
-
             if (standardItem != null)
             {
+                if (standardItem is Weapon)
+                {
+                    return (standardItem as Weapon).Clone();
+                }
                 return standardItem.Clone();
             }
             return null;
