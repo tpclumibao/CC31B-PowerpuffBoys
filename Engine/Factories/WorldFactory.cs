@@ -37,6 +37,8 @@ namespace Engine.Factories
                 "You arive at your destination it seems. As you look in fron of you, the once magestic gates of asea stand before you, crumbling and painted in red",
                 "Inn.png");
 
+            newWorld.LocationAt(1, -1).TraderHere = TraderFactory.GetTraderByName("Calli");
+
             newWorld.AddLocation(2, 0,
                "Upper HellionPlaza",
                "As you Enter the rundown taver, you notice that its still being kept relatively clean. a stark contrast to whats outside",
