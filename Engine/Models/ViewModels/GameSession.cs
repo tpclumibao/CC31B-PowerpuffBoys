@@ -87,7 +87,7 @@ namespace Engine.Models.ViewModels
         #endregion
         public GameSession() 
         {
-            CurrentPlayer = new Player{ Name = "Themis", CharacterClass = "Inquisitor", HitPoints = 100, Gold = 1000000, ExperiencePoints = 0, Level = 1 };
+            CurrentPlayer = new Player{ Name = "Themis", CharacterClass = "Inquisitor", CurrentHitPoints = 100, MaximumHitPoints = 100, Gold = 1000000, ExperiencePoints = 0, Level = 1 };
 
             if (!CurrentPlayer.Weapons.Any())
             {
@@ -217,23 +217,22 @@ namespace Engine.Models.ViewModels
             }
             else
             {
-                CurrentMonster.HitPoints -= damageToMonster;
+                CurrentMonster.CurrentHitPoints -= damageToMonster;
                 RaiseMessage($"You hit the {CurrentMonster.Name} for {damageToMonster} points.");
             }
             // If monster if killed, collect rewards and loot
-            if (CurrentMonster.HitPoints <= 0)
+            if (CurrentMonster.CurrentHitPoints <= 0)
             {
                 RaiseMessage("");
                 RaiseMessage($"You defeated the {CurrentMonster.Name}!");
                 CurrentPlayer.ExperiencePoints += CurrentMonster.RewardExperiencePoints;
                 RaiseMessage($"You receive {CurrentMonster.RewardExperiencePoints} experience points.");
-                CurrentPlayer.Gold += CurrentMonster.RewardGold;
-                RaiseMessage($"You receive {CurrentMonster.RewardGold} gold.");
-                foreach (ItemQuantity itemQuantity in CurrentMonster.Inventory)
+                CurrentPlayer.Gold += CurrentMonster.Gold;
+                RaiseMessage($"You receive {CurrentMonster.Gold} gold.");
+                foreach (GameItem gameItem in CurrentMonster.Inventory)
                 {
-                    GameItem item = ItemFactory.CreateGameItem(itemQuantity.ItemID);
-                    CurrentPlayer.AddItemToInventory(item);
-                    RaiseMessage($"You receive {itemQuantity.Quantity} {item.Name}.");
+                    CurrentPlayer.AddItemToInventory(gameItem);
+                    RaiseMessage($"You receive one {gameItem.Name}.");
                 }
                 // Get another monster to fight
                 GetMonsterAtLocation();
@@ -248,16 +247,16 @@ namespace Engine.Models.ViewModels
                 }
                 else
                 {
-                    CurrentPlayer.HitPoints -= damageToPlayer;
+                    CurrentPlayer.CurrentHitPoints -= damageToPlayer;
                     RaiseMessage($"The {CurrentMonster.Name} hit you for {damageToPlayer} points.");
                 }
                 // If player is killed, move them back to their home.
-                if (CurrentPlayer.HitPoints <= 0)
+                if (CurrentPlayer.CurrentHitPoints <= 0)
                 {
                     RaiseMessage("");
                     RaiseMessage($"The {CurrentMonster.Name} killed you.");
                     CurrentLocation = CurrentWorld.LocationAt(1, -1); // Player's home
-                    CurrentPlayer.HitPoints = CurrentPlayer.Level * 100; // Completely heal the player
+                    CurrentPlayer.CurrentHitPoints = CurrentPlayer.Level * 100; // Completely heal the player
                 }
             }
         }
