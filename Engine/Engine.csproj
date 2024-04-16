@@ -17,7 +17,9 @@
     <None Remove="Images\Locations\Sewer.png" />
     <None Remove="Images\Locations\Tavern.png" />
     <None Remove="Images\Locations\Upper.png" />
+    <None Remove="Images\Monsters\Erebus.png" />
     <None Remove="Images\Monsters\Flower.png" />
+    <None Remove="Images\Monsters\Knights.png" />
     <None Remove="Images\Monsters\Priest.png" />
     <None Remove="Images\Monsters\Rat.png" />
   </ItemGroup>
@@ -36,7 +38,9 @@
     <Resource Include="Images\Locations\Lower.png" />
     <Resource Include="Images\Locations\Sewer.png" />
     <Resource Include="Images\Locations\Tavern.png" />
+    <Resource Include="Images\Monsters\Erebus.png" />
     <Resource Include="Images\Monsters\Flower.png" />
+    <Resource Include="Images\Monsters\Knights.png" />
     <Resource Include="Images\Monsters\Priest.png" />
     <Resource Include="Images\Monsters\Rat.png" />
   </ItemGroup>

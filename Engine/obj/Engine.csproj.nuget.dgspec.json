@@ -11,7 +11,7 @@
         "projectName": "Engine",
         "projectPath": "C:\\Users\\tomij\\source\\repos\\CC31B-PowerpuffBoys\\Engine\\Engine.csproj",
         "packagesPath": "C:\\Users\\tomij\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomij\\Source\\Repos\\CC31B-PowerpuffBoys\\Engine\\obj\\",
+        "outputPath": "C:\\Users\\tomij\\source\\repos\\CC31B-PowerpuffBoys\\Engine\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tomij\\AppData\\Roaming\\NuGet\\NuGet.Config",
