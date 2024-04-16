@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Engine.Actions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,44 +9,44 @@ namespace Engine.Models
 {
     public class GameItem
     {
-        public int ItemTypeID { get; set; }
-        public string Name { get; set; }
-        public int Price { get; set; }
-        public string ImageName { get; set; }
-
-        public GameItem(int itemTypeID, string name, int price, string imageName)
+        public enum ItemCategory
         {
+            Miscellaneous,
+            Weapon,
+            Consumable
+        }
+        public ItemCategory Category { get; }
+        public int ItemTypeID { get; }
+        public string Name { get; }
+        public int Price { get; }
+        public bool IsUnique { get; }
+        public IAction Action { get; set; }
+        public string ImageName { get; }
+
+        public GameItem(ItemCategory category, int itemTypeID, string name, int price, string imageName, bool isUnique = false, IAction action = null)
+        {
+            Category = category;
             ItemTypeID = itemTypeID;
             Name = name;
             Price = price;
             ImageName = imageName;
+            IsUnique = isUnique;
+            Action = action;
+        }
+
+        public void PerformAction(LivingEntity actor, LivingEntity target)
+        {
+            Action?.Execute(actor, target);
         }
 
         public GameItem Clone()
         {
-            return new GameItem(ItemTypeID, Name, Price, ImageName);
-        }
-
-
-    }
-
-    public class Weapon : GameItem
-    {
-        public int MinimumDamage {  get; set; }
-        public int MaximumDamage { get; set; }
-
-        public Weapon(int itemTypeID, string name, int price, string imageName, int minDamage, int maxDamage) 
-            : base(itemTypeID, name, price, imageName)
-        {
-            MinimumDamage = minDamage;
-            MaximumDamage = maxDamage;
-        }
-
-        public new Weapon Clone()
-        {
-            return new Weapon(ItemTypeID, Name, Price, ImageName, MinimumDamage, MaximumDamage);
+            return new GameItem(Category, ItemTypeID, Name, Price, ImageName, IsUnique, Action);
         }
     }
- 
+
+
+
+
 }
 

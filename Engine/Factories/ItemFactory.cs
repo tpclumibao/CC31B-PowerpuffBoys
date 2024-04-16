@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Engine.Actions;
+using Engine.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using Engine.Models;
 
 namespace Engine.Factories
 {
@@ -13,33 +13,63 @@ namespace Engine.Factories
         private static readonly List<GameItem> _standardGameItems = new List<GameItem>();
         static ItemFactory()
         {
-            _standardGameItems.Add(new Weapon(101, "Inquisitor Blade", 5, "", 0, 10));
-            _standardGameItems.Add(new Weapon(102, "Blade of Rebelion", 20, "", 5, 10));
-            _standardGameItems.Add(new Weapon(103, "Franks Hook", 20, "", 6, 6));
-            _standardGameItems.Add(new GameItem(500, "Crown of Asea", 100, ""));
-            _standardGameItems.Add(new GameItem(501, "Echoas of Order", 2, ""));
-            _standardGameItems.Add(new GameItem(502, "Plague Sack", 1, ""));
-            _standardGameItems.Add(new GameItem(503, "Eroded Corps", 0, ""));
-            _standardGameItems.Add(new GameItem(504, "Bloody Hearth", 0, ""));
-            _standardGameItems.Add(new GameItem(505, "Torn Lower Body", 0, ""));
-            _standardGameItems.Add(new GameItem(506, "Rat Dung", 0, ""));
-            _standardGameItems.Add(new GameItem(507, "Rotting Root", 0, ""));
-            _standardGameItems.Add(new GameItem(508, "Dust", 0, ""));
+            BuildWeapon(1001, "Inquisitor Blade", 5, "pack://application:,,,/Engine;component/Images/Items/Inqui.jpg", 1, 3);
+            BuildWeapon(1002, "Blade of Rebelion", 100, "pack://application:,,,/Engine;component/Images/Items/Rebel.jpg", 1, 4);
+            BuildWeapon(1003, "Franks Hook", 100, "pack://application:,,,/Engine;component/Images/Items/Hook.jpg", 1, 10);
 
+            BuildWeapon(1501, "Rusted Sword", 0, "villainitem", 0, 2);
+            BuildWeapon(1502, "Crucifix", 0, "villainitem", 0, 3);
+            BuildWeapon(1503, "Thorns", 0, "villainitem", 1, 5);
+            BuildWeapon(1504, "Fang", 0, "villainitem", 4, 12);
+            BuildWeapon(1505, "Primordial Chaos", 0, "villainitem", 5, 15);
+
+            BuildHealingItem(2001, "Potion of Sacrifice", 25, 25, "pack://application:,,,/Engine;component/Images/Items/Potion.jpg");
+
+            BuildMiscellaneousItem(2501, "Crown of Asea", 100, "collectibleonly");
+            BuildMiscellaneousItem(2502, "Echoas of Order", 2, "collectibleonly");
+            BuildMiscellaneousItem(2503, "Plague Sack", 1, "collectibleonly");
+            BuildMiscellaneousItem(2504, "Grotesque Corpses", 3, "collectibleonly");
+            BuildMiscellaneousItem(2505, "Bloody Hearth", 0, "collectibleonly");
+            BuildMiscellaneousItem(2506, "Torn Lower Body", 0, "collectibleonly");
+            BuildMiscellaneousItem(2506, "Rat Dung", 0, "collectibleonly");
+            BuildMiscellaneousItem(2506, "Rotting Root", 0, "collectibleonly");
+            BuildMiscellaneousItem(2506, "Dust", 0, "collectibleonly");
+
+            BuildMiscellaneousItem(3001, "Old Jar", 20, "collectibleonly");
+            BuildMiscellaneousItem(3002, "Fresh Hearth", 20, "collectibleonly");
+            BuildMiscellaneousItem(3003, "Finger", 20, "collectibleonly");
+
+            //s_GameItems.Add(new Weapon(1001, "Stick", 0, "pack://application:,,,/Engine;component/Images/Items/stick.png", 1, 10));
+            //s_GameItems.Add(new GameItem(2001, "Imp Essence", 10, "pack://application:,,,/Engine;component/Images/Items/potion.png"));
+            //s_GameItems.Add(new GameItem(2002, "Potion", 100, "pack://application:,,,/Engine;component/Images/Items/potion.png"));
+            //s_GameItems.Add(new GameItem(9001, "placeholder", 10000, "pack://application:,,,/Engine;component/Images/Items/stick.png"));
         }
 
         public static GameItem CreateGameItem(int itemTypeID)
         {
-            GameItem standardItem = _standardGameItems.FirstOrDefault(item => item.ItemTypeID == itemTypeID);
-            if (standardItem != null)
-            {
-                if (standardItem is Weapon)
-                {
-                    return (standardItem as Weapon).Clone();
-                }
-                return standardItem.Clone();
-            }
-            return null;
+            return _standardGameItems.FirstOrDefault(item => item.ItemTypeID == itemTypeID)?.Clone();
         }
+        private static void BuildMiscellaneousItem(int id, string name, int price, string imageName)
+        {
+            _standardGameItems.Add(new GameItem(GameItem.ItemCategory.Miscellaneous, id, name, price, imageName));
+        }
+        private static void BuildWeapon(int id, string name, int price, string imageName,
+                                        int minimumDamage, int maximumDamage)
+        {
+            GameItem weapon = new GameItem(GameItem.ItemCategory.Weapon, id, name, price, imageName, true);
+            weapon.Action = new AttackWithWeapon(weapon, minimumDamage, maximumDamage);
+            _standardGameItems.Add(weapon);
+        }
+        private static void BuildHealingItem(int id, string name, int price, int hitPointsToHeal, string imageName)
+        {
+            GameItem item = new GameItem(GameItem.ItemCategory.Consumable, id, name, price, imageName);
+            item.Action = new Heal(item, hitPointsToHeal);
+            _standardGameItems.Add(item);
+        }
+        public static string ItemName(int itemTypeID)
+        {
+            return _standardGameItems.FirstOrDefault(i => i.ItemTypeID == itemTypeID)?.Name ?? "";
+        }
+
     }
 }

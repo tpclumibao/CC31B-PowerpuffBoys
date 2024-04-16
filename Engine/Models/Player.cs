@@ -1,76 +1,69 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Collections.Specialized;
-using System.ComponentModel;
 using System.Linq;
-using System.Security.AccessControl;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Engine.Models
 {
     public class Player : LivingEntity
     {
+        #region Properties
         private string _characterClass;
         private int _experiencePoints;
-        private int _level;
-
         public string CharacterClass
         {
-            get
-            {
-                return _characterClass;
-            }
+            get { return _characterClass; }
             set
             {
                 _characterClass = value;
-                OnPropertyChanged(nameof(CharacterClass));
+                OnPropertyChanged();
             }
         }
-
         public int ExperiencePoints
         {
-            get
-            {
-                return _experiencePoints;
-            }
-            set
+            get { return _experiencePoints; }
+            private set
             {
                 _experiencePoints = value;
-                OnPropertyChanged(nameof(ExperiencePoints));
+                OnPropertyChanged();
+                SetLevelAndMaximumHitPoints();
             }
         }
-        public int Level
+        public ObservableCollection<QuestStatus> Quests { get; }
+        public ObservableCollection<Recipe> Recipes { get; }
+        #endregion
+        public event EventHandler OnLeveledUp;
+        public string ImageName { get; set; }
+        public Player(string name, string characterClass, int experiencePoints,
+                      int maximumHitPoints, int currentHitPoints, int gold, string imageName) :
+            base(name, maximumHitPoints, currentHitPoints, gold)
         {
-            get
-            {
-                return _level;
-            }
-            set
-            {
-                _level = value;
-                OnPropertyChanged(nameof(Level));
-            }
-        }
-        public ObservableCollection<QuestStatus> Quests { get; set; }
-
-        public Player()
-        {
+            CharacterClass = characterClass;
+            ExperiencePoints = experiencePoints;
             Quests = new ObservableCollection<QuestStatus>();
+            Recipes = new ObservableCollection<Recipe>();
+            ImageName = imageName;
         }
-
-
-        public bool HasAllTheseItems(List<ItemQuantity> items)
+        public void AddExperience(int experiencePoints)
         {
-            foreach (ItemQuantity item in items)
+            ExperiencePoints += experiencePoints;
+        }
+        public void LearnRecipe(Recipe recipe)
+        {
+            if (!Recipes.Any(r => r.ID == recipe.ID))
             {
-                if (Inventory.Count(i => i.ItemTypeID == item.ItemID) < item.Quantity)
-                {
-                    return false;
-                }
+                Recipes.Add(recipe);
             }
-            return true;
+        }
+        private void SetLevelAndMaximumHitPoints()
+        {
+            int originalLevel = Level;
+            Level = (ExperiencePoints / 100) + 1;
+            if (Level != originalLevel)
+            {
+                MaximumHitPoints = Level * 10;
+                OnLeveledUp?.Invoke(this, System.EventArgs.Empty);
+            }
         }
     }
 }

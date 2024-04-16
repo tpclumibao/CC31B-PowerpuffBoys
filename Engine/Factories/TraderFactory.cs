@@ -1,9 +1,7 @@
-﻿using Engine.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Engine.Models;
 
 namespace Engine.Factories
 {
@@ -12,15 +10,20 @@ namespace Engine.Factories
         private static readonly List<Trader> _traders = new List<Trader>();
         static TraderFactory()
         {
+            Trader shady = new Trader("Shady Man");
+
+            for (int x = 0; x < 50; x++)
+            {
+                shady.AddItemToInventory(ItemFactory.CreateGameItem(1002));
+                shady.AddItemToInventory(ItemFactory.CreateGameItem(1003));
+            }
             Trader calli = new Trader("Calli");
-            calli.AddItemToInventory(ItemFactory.CreateGameItem(101));
-            Trader farmerTed = new Trader("Farmer Ted");
-            farmerTed.AddItemToInventory(ItemFactory.CreateGameItem(1001));
-            Trader peteTheHerbalist = new Trader("Pete the Herbalist");
-            peteTheHerbalist.AddItemToInventory(ItemFactory.CreateGameItem(1001));
+            calli.AddItemToInventory(ItemFactory.CreateGameItem(3001));
+            calli.AddItemToInventory(ItemFactory.CreateGameItem(3002));
+            calli.AddItemToInventory(ItemFactory.CreateGameItem(3003));
+            AddTraderToList(shady);
             AddTraderToList(calli);
-            AddTraderToList(farmerTed);
-            AddTraderToList(peteTheHerbalist);
+
         }
         public static Trader GetTraderByName(string name)
         {

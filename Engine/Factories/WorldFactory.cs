@@ -13,71 +13,68 @@ namespace Engine.Factories
         {
             World newWorld = new World();
 
-            newWorld.AddLocation(0, 0, 
-                "Entrance to Asea", 
-                "You arive at your destination it seems. As you look in fron of you, the once magestic gates of asea stand before you, crumbling and painted in red", 
-                "Gate.png");
-
-            newWorld.LocationAt(0,0).QuestAvailableHere.Add(QuestFactory.GetQuestByID(1));
+            newWorld.AddLocation(0, 0,
+                "Gates of Asea",
+                "The stained Grand Gates of Asea Greets you",
+                "Gate.png","Gate.png");
+                newWorld.LocationAt(0, 0).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(1));
 
             newWorld.AddLocation(1, 0,
-                "LowerHellion Plaza",
-                "The once bustling plaza of Asea, now littered with corpses of both the young and old",
-                "Lower.png");
+                "Lower Hellion Plaza",
+                "The once bustling plaza of Asea, now as empty as a wasteland",
+                "Lower.png", "Lower.png");
+                newWorld.LocationAt(1, 0).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(3));
 
             newWorld.AddLocation(1, 1,
                 "Tearfull Tavern",
-                "As you Enter the rundown taver, you notice that its still being kept relatively clean. a stark contrast to whats outside",
-                "Tavern.png");
-
-            
+                "As you Enter an old rundown tavern. it stil stinks of bear",
+                "Tavern.png", "Tavern.png");
+                newWorld.LocationAt(1, 1).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(2));
 
             newWorld.AddLocation(1, -1,
                 "SpillWay Inn",
-                "You arive at your destination it seems. As you look in fron of you, the once magestic gates of asea stand before you, crumbling and painted in red",
-                "Inn.png");
-
-            newWorld.LocationAt(1, -1).TraderHere = TraderFactory.GetTraderByName("Calli");
+                "You enter an inn you supposed. it looks more like a honted house",
+                "Inn.png", "Inn.png");
+                newWorld.LocationAt(1, -1).TraderHere = TraderFactory.GetTraderByName("Calli");
 
             newWorld.AddLocation(2, 0,
                "Upper HellionPlaza",
-               "As you Enter the rundown taver, you notice that its still being kept relatively clean. a stark contrast to whats outside",
-               "Upper.png");
+               "You stand in front of the Grand castle of asea",
+               "Upper.png", "Upper.png");
+                newWorld.LocationAt(2, 0).QuestsAvailableHere.Add(QuestFactory.GetQuestByID(4));
+                newWorld.LocationAt(2, 0).TraderHere = TraderFactory.GetTraderByName("Calli");
 
             newWorld.AddLocation(2, 1,
                 "Church of Erebus",
-                "The once bustling plaza of Asea, now littered with corpses of both the young and old",
-                "Church.png");
-
-            newWorld.LocationAt(2, 1).AddMonster(2, 100);
+                "A once Church to gods of good now flooded with cultist.",
+                "Church.png", "Church.png");
+                newWorld.LocationAt(2, 1).AddMonster(2, 100);
 
             newWorld.AddLocation(2, -1,
                 "Withering Garden",
-                "As you Enter the rundown taver, you notice that its still being kept relatively clean. a stark contrast to whats outside",
-                "Garden.png");
-
-            newWorld.LocationAt(2, -1).AddMonster(3, 100);
+                "A once grand garden, now withered. but one house tall flower stands.",
+                "Garden.png", "Garden.png");
+                newWorld.LocationAt(2, -1).AddMonster(3, 100);
 
             newWorld.AddLocation(3, 0,
                 "Castle of Blight",
-                "You arive at your destination it seems. As you look in fron of you, the once magestic gates of asea stand before you, crumbling and painted in red",
-                "Castle.png");
-
-            newWorld.LocationAt(3, 0).AddMonster(4, 100);
+                "You have entered the halls of the castle. it is still magnificent even with the chaos",
+                "Castle.png", "Castle.png");
+                newWorld.LocationAt(3, 0).AddMonster(4, 100);
 
             newWorld.AddLocation(1, 2,
                 "Sewers",
-                "The once bustling plaza of Asea, now littered with corpses of both the young and old",
-                "Sewer.png");
-
-            newWorld.LocationAt(1, 2).AddMonster(1, 100);
+                "It stinks... stool and Rats litter the place",
+                "Sewer.png", "Sewer.png");
+                newWorld.LocationAt(1, 2).AddMonster(1, 100);
 
             newWorld.AddLocation(4, 0,
                 "Cliff View",
-                "As you Enter the rundown taver, you notice that its still being kept relatively clean. a stark contrast to whats outside",
-                "pCliff.png");
+                "A High cliff behind the castle. facing the Dark oceans of asea",
+                "Cliff.png", "Cliff.png");
 
-            newWorld.LocationAt(4, 0).AddMonster(5, 100);
+
+
 
 
 

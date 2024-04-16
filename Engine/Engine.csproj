@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\Items\Hook.jpg" />
+    <None Remove="Images\Items\Inqui.jpg" />
+    <None Remove="Images\Items\Potion.jpg" />
+    <None Remove="Images\Items\Rebel.jpg" />
     <None Remove="Images\Locations\Castle.png" />
     <None Remove="Images\Locations\Church.png" />
     <None Remove="Images\Locations\Cliff.png" />
@@ -22,9 +26,14 @@
     <None Remove="Images\Monsters\Knights.png" />
     <None Remove="Images\Monsters\Priest.png" />
     <None Remove="Images\Monsters\Rat.png" />
+    <None Remove="Images\Player\Themis.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\Items\Hook.jpg" />
+    <Resource Include="Images\Items\Inqui.jpg" />
+    <Resource Include="Images\Items\Potion.jpg" />
+    <Resource Include="Images\Items\Rebel.jpg" />
     <Resource Include="Images\Locations\Upper.png" />
   </ItemGroup>
 
@@ -43,6 +52,7 @@
     <Resource Include="Images\Monsters\Knights.png" />
     <Resource Include="Images\Monsters\Priest.png" />
     <Resource Include="Images\Monsters\Rat.png" />
+    <Resource Include="Images\Player\Themis.jpg" />
   </ItemGroup>
 
 </Project>
