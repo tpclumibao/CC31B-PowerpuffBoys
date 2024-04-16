@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tomij\\source\\repos\\tpclumibao\\CC31B-PowerpuffBoyss\\Darkmyth\\CC31B-PowerpuffBoys.csproj": {}
+    "C:\\Users\\tomij\\Source\\Repos\\CC31B-PowerpuffBoys\\Darkmyth\\CC31B-PowerpuffBoys.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tomij\\source\\repos\\tpclumibao\\CC31B-PowerpuffBoyss\\Darkmyth\\CC31B-PowerpuffBoys.csproj": {
+    "C:\\Users\\tomij\\Source\\Repos\\CC31B-PowerpuffBoys\\Darkmyth\\CC31B-PowerpuffBoys.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomij\\source\\repos\\tpclumibao\\CC31B-PowerpuffBoyss\\Darkmyth\\CC31B-PowerpuffBoys.csproj",
+        "projectUniqueName": "C:\\Users\\tomij\\Source\\Repos\\CC31B-PowerpuffBoys\\Darkmyth\\CC31B-PowerpuffBoys.csproj",
         "projectName": "CC31B-PowerpuffBoys",
-        "projectPath": "C:\\Users\\tomij\\source\\repos\\tpclumibao\\CC31B-PowerpuffBoyss\\Darkmyth\\CC31B-PowerpuffBoys.csproj",
+        "projectPath": "C:\\Users\\tomij\\Source\\Repos\\CC31B-PowerpuffBoys\\Darkmyth\\CC31B-PowerpuffBoys.csproj",
         "packagesPath": "C:\\Users\\tomij\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomij\\source\\repos\\tpclumibao\\CC31B-PowerpuffBoyss\\Darkmyth\\obj\\",
+        "outputPath": "C:\\Users\\tomij\\Source\\Repos\\CC31B-PowerpuffBoys\\Darkmyth\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tomij\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\tomij\\source\\repos\\tpclumibao\\CC31B-PowerpuffBoyss\\Engine\\Engine.csproj": {
-                "projectPath": "C:\\Users\\tomij\\source\\repos\\tpclumibao\\CC31B-PowerpuffBoyss\\Engine\\Engine.csproj"
+              "C:\\Users\\tomij\\Source\\Repos\\CC31B-PowerpuffBoys\\Engine\\Engine.csproj": {
+                "projectPath": "C:\\Users\\tomij\\Source\\Repos\\CC31B-PowerpuffBoys\\Engine\\Engine.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\Users\\tomij\\source\\repos\\tpclumibao\\CC31B-PowerpuffBoyss\\Engine\\Engine.csproj": {
+    "C:\\Users\\tomij\\Source\\Repos\\CC31B-PowerpuffBoys\\Engine\\Engine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomij\\source\\repos\\tpclumibao\\CC31B-PowerpuffBoyss\\Engine\\Engine.csproj",
+        "projectUniqueName": "C:\\Users\\tomij\\Source\\Repos\\CC31B-PowerpuffBoys\\Engine\\Engine.csproj",
         "projectName": "Engine",
-        "projectPath": "C:\\Users\\tomij\\source\\repos\\tpclumibao\\CC31B-PowerpuffBoyss\\Engine\\Engine.csproj",
+        "projectPath": "C:\\Users\\tomij\\Source\\Repos\\CC31B-PowerpuffBoys\\Engine\\Engine.csproj",
         "packagesPath": "C:\\Users\\tomij\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomij\\source\\repos\\tpclumibao\\CC31B-PowerpuffBoyss\\Engine\\obj\\",
+        "outputPath": "C:\\Users\\tomij\\source\\repos\\CC31B-PowerpuffBoys\\Engine\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tomij\\AppData\\Roaming\\NuGet\\NuGet.Config",
